@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter a String</td>
+            <td><input type="text" name="" id="string" placeholder="enter a string"></td>
+            <br>
+        </tr>
+        <tr>
+            <td>Enter a Number</td>
+            <td><input type="text" name="" id="number" placeholder="enter a number"></td>
+        </tr>
+        <tr>
+            <td>Enter Power</td>
+            <td><input type="text" name="" id="power" placeholder="enter the power"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="result" value="Get Result"></td>
+        </tr>
+        <tr>
+            <td>Length of the String</td>
+            <td><input type="text" name="" id="len"></td>
+        </tr>
+        <tr>
+            <td>Power of Number</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Square root of Number</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Ceil  of Number</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>Floor of Number</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+     
+    </table>
+    <script>
+
+        
+        document.getElementById("result").addEventListener("click",()=>{
+            const String = document.getElementById("string").value
+            const Number = document.getElementById("number").value
+            const Power = document.getElementById("power").value
+            const Length = document.getElementById("len")
+           
+            console.log("String-->",String)
+            console.log("Number-->",Number)
+            console.log("Power-->",Power)
+            console.log("String Length-->",String.length)
+            // adding length of the string
+            Length.innerHTML = String.length
+        })
+      
+        
+    </script>
+</body>
+</html>
